@@ -1,0 +1,145 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: #6b6969;
+    font-family: sans-serif;
+    padding: 0;
+}
+
+header#cabecalho {
+    background-color: white;
+    position: sticky;
+    border-bottom: 3px solid #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+}
+
+img#foto-header {
+    width: 100px;
+
+
+}
+
+nav#menu-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul#menu-link li {
+    display: inline-block;
+    margin: 5px;
+}
+
+ul#menu-link li a.link-nav {
+    color: black;
+    font-weight: bold;
+    padding: 14px;
+    text-decoration: none;
+    font-size: 12pt;
+}
+
+ul#menu-link li a.link-nav:hover {
+    font-size: 10pt;
+    cursor: pointer;
+    font-weight: bolder;
+    border-bottom: 1px solid black;
+}
+
+/*Configuração do hero*/
+
+main header#hero {
+    height: 500px;
+    border: 2px solid white;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 150px;
+}
+
+main header#hero h1 {
+    margin-bottom: 10px;
+}
+
+main header#hero h1:hover {
+    color: black;
+    cursor: pointer;
+}
+
+/*Configuração da sessão Sobre Nós*/
+
+section#sobre {
+    background-color: white;
+    padding: 20px;
+}
+
+section#sobre div#campo {
+    width: 1200px;
+    margin: 10px auto 100px auto;
+}
+
+section#sobre h2 {
+    color: #6b6969;
+    text-align: center;
+    font-size: 28pt;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+section#sobre img#foto-perfil {
+    width: 400px;
+    display: block;
+    margin: auto;
+}
+
+section#sobre h3 {
+    color: #6b6969;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    transition: all .4s;
+}
+
+section#sobre h3:hover {
+    letter-spacing: 5pt;
+    cursor: pointer;
+    text-shadow: 1px 1px 3px black;
+}
+
+section#sobre div#org-rede {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section#sobre div#org-rede img.img-rede {
+    width: 40px;
+    margin: 10px;
+    transition: all .3s;
+    margin-bottom: 50px;
+}
+
+section#sobre div#org-rede img.img-rede:hover {
+    width: 60px;
+}
+
+section#sobre article#apresentacao {
+    width: 700px;
+    margin: auto;
+}
+
+section#sobre article#apresentacao p {
+    text-align: justify;
+    margin-bottom: 10px;
+    text-indent: 20px;
+    line-height: 1.5;
+}
