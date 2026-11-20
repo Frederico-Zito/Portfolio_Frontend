@@ -66,9 +66,12 @@
                     </div>
                 </div>
                 <article id="apresentacao">
-                    <p> Eu sou um estudante de Informática, formado no Instituto Politécnico Privado Industrial Evolução -
-                        IPPIE, na especialidade de Técnico de informática. Foram 4 anos de formação, composta por baixos e
-                        altos, tive o privilégio de aprender tudo o quanto teve no meu alcance, e em tudo que pude beber de
+                    <p> Eu sou um estudante de Informática, formado no Instituto Politécnico Privado Industrial Evolução
+                        -
+                        IPPIE, na especialidade de Técnico de informática. Foram 4 anos de formação, composta por baixos
+                        e
+                        altos, tive o privilégio de aprender tudo o quanto teve no meu alcance, e em tudo que pude beber
+                        de
                         outras pessoas.
                     </p>
                     <p>
@@ -82,15 +85,19 @@
                             Full-Stack´s</em>, sabendo mesmo assim que é um caminho longo a seguir
                     </p>
                 </article>
-                <h3>Minhas Competências</h3>
+
                 <article id="competencias">
-                    <p> Com o objectivo e a meta estabelecida por mim, para me tornar um dia uma referência angolana na área
+
+                    <h3>Minhas Competências</h3>
+
+                    <p> Com o objectivo e a meta estabelecida por mim, para me tornar um dia uma referência angolana na
+                        área
                         da Tecnologia, tenho construindo competências, que eu sei que me colocaram um dia no topo.</p>
                     <p>
                         Essas são as minhas competencias adquiridas até o momento:
                     </p>
-                    <ul>
-                        <ol>
+                    <ul id="menu-comp">
+                        <ol class="area-comp">
                             <h4>Hardskills</h4>
                             <li>HTML5 & CSS3</li>
                             <li>Lógica de Programação</li>
@@ -98,7 +105,7 @@
                             <li>JavaScript Básico</li>
                             <li>Bootstrap Framework</li>
                         </ol>
-                        <ol>
+                        <ol class="area-comp">
                             <h4>Softskill</h4>
                             <li>Boa Capacidade de Comunicação</li>
                             <li>Capacidade de Liderança</li>
@@ -156,32 +163,38 @@
     <!--AQUI SÃO APRESENTADAS MAIS INFORMAÇÕES SOBRE A MINHA PESSOA-->
 
     <div id="informacoes">
-        <h2>Meus Serviços</h2>
-        <div id="informações-corpo">
-            <div class="card-informacoes">
-                <h3>Formação de Informática</h3>
-                <p>Trabalho também como formador na área de informática, ensinando desde a base fundamental até onde o
-                    formando se tornar independente e decidir crescer sozinho.</p>
-            </div>
-            <div class="card-informacoes">
-                <h3>Programação</h3>
-                <p>Adoro a programação e vecho ela como um Robby para mim, e é um imenso privilégio enviar aquilo que eu
-                    amo.</p>
-                <p>Aprenderás a desenvolver lógica e a criar soluções para os seus próprios problemas, como também a
-                    ajudar e desenvoler para empresas.</p>
-            </div>
-            <div class="card-informacoes">
-                <h3>Desenvolvimento de Site</h3>
-                <p>Ofereço os meus serviços, como desenvolvedor de sites e sistemas Online, a preços justos e de acordo
-                    as exigências do cliente.</p>
+        <div id="informacoes-corpo">
+            <h2>Meus Serviços</h2>
+            <div id="row">
+                <div class="card-informacoes">
+                    <h3>Formação de Informática</h3>
+                    <p>Trabalho também como formador na área de informática, ensinando desde a base fundamental até onde
+                        o
+                        formando se tornar independente e decidir crescer sozinho.</p>
+                </div>
+                <div class="card-informacoes">
+                    <h3>Programação</h3>
+                    <p>Adoro a programação e vecho ela como um Robby para mim, e é um imenso privilégio enviar aquilo
+                        que eu
+                        amo.</p>
+                    <p>Aprenderás a desenvolver lógica e a criar soluções para os seus próprios problemas, como também a
+                        ajudar e desenvoler para empresas.</p>
+                </div>
+                <div class="card-informacoes">
+                    <h3>Desenvolvimento de Site</h3>
+                    <p>Ofereço os meus serviços, como desenvolvedor de sites e sistemas Online, a preços justos e de
+                        acordo
+                        as exigências do cliente.</p>
+                </div>
             </div>
         </div>
         <h2>Minhas recomendações</h2>
 
         <aside id="lateral-esquerda">
-            <video src="" controls poster="">
-
-            </video>
+            <iframe width="900" height="450" src="https://www.youtube.com/embed/A1BaZr82XJI"
+                title="Se nao aprender PROGRAMAÇÃO com esse video. - ̗̀  DESISTE   ̖́-" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <p>Depois deste video, você não será a mesma pessoa que tem sempre desistindo de tudo antes mesmo de chegar
                 ao fim e mostrar o quanto aprendeste, e quanto ainda podes aprender, neste ramo da informática.</p>
         </aside>
@@ -212,12 +225,12 @@
 
     <!--FORMULÁRIO DE CONTATO-->
 
-    <div id="contato">
+    <div id="contacto">
         <form action="" method="post">
             <fieldset>
                 <legend>Entre em contacto</legend>
-                <div>
-                    <div>
+                <div id="form-row">
+                    <div class="card">
                         <p>
                             <label for="nome">Nome:</label>
                             <input type="text" name="snome" id="nome" maxlength="30" size="35" placeholder="Nome"
@@ -229,7 +242,7 @@
                                 placeholder="examplo@gmail.com">
                         </p>
                     </div>
-                    <div>
+                    <div class="card">
                         <p>
                             <label for="numero">Tel: </label>
                             <input type="number" name="Nnumero" id="numero" maxlength="9" size="35"
@@ -250,10 +263,8 @@
                             </select>
                         </p>
                     </div>
-
-                    <textarea name="mensagem" id="mensagem" cols="50" rows="20"></textarea>
                 </div>
-
+                <textarea name="mensagem" id="mensagem" cols="50" rows="20"></textarea>
                 <div>
                     <button type="button" class="btn">Submeter</button>
                 </div>

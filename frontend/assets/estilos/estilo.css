@@ -39,7 +39,7 @@ ul#menu-link li {
 }
 
 ul#menu-link li a.link-nav {
-    color: black;
+    color: #6b6969;
     font-weight: bold;
     padding: 14px;
     text-decoration: none;
@@ -142,4 +142,202 @@ section#sobre article#apresentacao p {
     margin-bottom: 10px;
     text-indent: 20px;
     line-height: 1.5;
+}
+
+section#sobre article#competencias {
+    width: 1200px;
+    margin: auto;
+}
+
+section#sobre article#competencias h3 {
+    margin-top: 50px;
+}
+
+section#sobre article#competencias p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+    text-align: justify;
+    text-indent: 20px;
+}
+
+section#sobre article#competencias ul#menu-comp {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+ul#menu-comp ol.area-comp {
+    padding: 20px;
+    list-style: square;
+    line-height: 1.5;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #6b6969c9;
+    color: white;
+    width: 400px;
+}
+
+ul#menu-comp ol.area-comp h4 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/*Configuração da sessão Projecto*/
+section#projectos {
+    width: 1200px;
+    margin: 100px auto 100px auto;
+    color: white;
+}
+
+section#projectos h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+section#projectos p {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+section#projectos div#projecto-corpo {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+section#projectos div#projecto-corpo div.colunas {
+    margin: 10px;
+    border-bottom: 5px solid black;
+    width: 400px;
+    padding: 20px;
+    color: #6b6969;
+    background-color: white;
+    border-radius: 10px;
+    transition: all .3s;
+}
+
+section#projectos div#projecto-corpo div.colunas:hover {
+    width: 500px;
+    cursor: pointer;
+}
+
+section#projectos div#projecto-corpo div.colunas h3 {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 15pt;
+}
+
+section#projectos div#projecto-corpo div.colunas p {
+    text-align: justify;
+    text-indent: 20px;
+    line-height: 1.5;
+}
+
+/*Configuração de serviços*/
+div#informacoes {
+    background-color: white;
+    padding: 20px;
+}
+
+div#informacoes-corpo {
+    width: 1200px;
+    margin: 100px auto 100px auto;
+}
+
+div#informacoes-corpo h2 {
+    text-align: center;
+    color: #6b6969;
+    margin-bottom: 20px;
+}
+
+div#informacoes-corpo div#row {
+    display: flex;
+}
+
+div#informacoes-corpo div#row div.card-informacoes {
+    margin: 10px;
+    background-color: #6b6969;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    border-bottom: 5px solid black;
+    width: 400px;
+    transition: all .6s;
+}
+
+div#informacoes-corpo div#row div.card-informacoes:hover {
+    width: 500px;
+    cursor: pointer;
+}
+
+div#informacoes-corpo div#row div.card-informacoes h3 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+div#informacoes-corpo div#row div.card-informacoes p {
+    text-align: justify;
+    line-height: 1.5;
+    text-indent: 20px;
+}
+
+div#contacto {}
+
+form {
+    margin: 100px auto 100px auto;
+    width: 800px;
+    padding: 20px;
+}
+
+#form-row {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+#form-row .card {
+    margin-right: 10px;
+}
+
+legend {
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 20pt;
+}
+
+label {
+    color: white;
+    margin-bottom: 15px;
+}
+
+input, select {
+    width: 100%;
+    height: 30px;
+}
+
+textarea {
+    width: 100%;
+}
+
+div button.btn {
+    width: 100%;
+    height: 50px;
+    color: #6b6969;
+    font-weight: 800;
+    font-size: 12pt;
+    text-transform: uppercase;
+    cursor: pointer;
+
+}
+
+/*Configuração do Footer*/
+footer#rodape {
+    background-color: white;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 3px solid black;
 }
