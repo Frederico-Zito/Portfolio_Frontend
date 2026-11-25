@@ -43,6 +43,7 @@ ul#menu-link li {
 }
 
 ul#menu-link li a.link-nav {
+    display: inline-block;
     color: #ffffff;
     font-weight: bold;
     padding: 14px;
@@ -255,7 +256,8 @@ div#faq {
     margin: 20px auto;
     cursor: pointer;
 }
-div#faq h2{
+
+div#faq h2 {
     text-align: center;
     color: var(--cor-de-fundo);
     font-weight: 900;
@@ -266,7 +268,7 @@ summary {
     padding: 10px;
 }
 
-div#faq summary{
+div#faq summary {
     color: orange;
     font-weight: bold;
 }
@@ -275,7 +277,8 @@ div#faq summary{
 
 form {
     margin: 100px auto 100px auto;
-    width: 800px;
+    max-width: 800px;
+    width: 100%;
     padding: 20px;
 }
 
@@ -283,6 +286,7 @@ form {
     display: flex;
     margin-bottom: 10px;
     gap: 16px;
+    flex-wrap: wrap;
 
 }
 
@@ -333,4 +337,16 @@ footer#rodape {
     justify-content: center;
     align-items: center;
     border-top: 3px solid orange;
+}
+
+/*Responsividade*/
+
+@media (max-width: 700px) {
+    div#informacoes-corpo div#row {
+        flex-wrap: wrap;
+    }
+
+    section#projectos div#projecto-corpo {
+        flex-wrap: wrap;
+    }
 }
