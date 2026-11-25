@@ -19,7 +19,7 @@ if(menuButton && menuNav){
     });
 
     //Fechar o menu depois de selecionar o link
-    menuNav.querySelectorAll("a").forEach(function(li){
+    menuNav.querySelectorAll("a").forEach(function(link){
         link.addEventListener("click", closeMenu);
     });
 

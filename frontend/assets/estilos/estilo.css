@@ -367,6 +367,10 @@ footer#rodape {
     border: none;
     cursor: pointer;
 }
+.menu-toggle:focus-visible{
+    outline: 3px solid orange;
+    outline-offset: 1px;
+}
 .menu-toggle span{
     display: block;
     width: 28px;
