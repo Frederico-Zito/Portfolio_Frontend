@@ -17,7 +17,7 @@
 <body>
     <header id="cabecalho">
         <a href="index.html" target="_self">
-            <img src="assets/imagens/Propietário.jpeg" alt="" id="foto-header">
+            <img src="assets/imagens/foto-perfil.jpeg" alt="Foto de perfil de Frederico Zito" id="foto-header">
         </a>
         <nav id="menu-nav">
             <ul id="menu-link">
@@ -32,12 +32,14 @@
     </header>
 
     <hr>
-    <main>
+    <main id="inicio">
         <header id="hero">
-            <h1>Hoje você conhecerá alguém tão especial.</h1>
-            <p>
-                Esta especialidade, será útil para você um dia, seja Particular ou Empresa.
-            </p>
+            <div style="visibility: hidden;">
+                <h1>Hoje você conhecerá alguém tão especial.</h1>
+                <p>
+                    Esta especialidade, será útil para você um dia, seja Particular ou Empresa.
+                </p>
+            </div>
         </header>
 
         <!--SESSÃO SOBRE MIM-->
@@ -47,21 +49,22 @@
                 <h2>Sobre Mim</h2>
                 <div>
                     <a href="index.html">
-                        <img src="assets/imagens/Propietário.jpeg" alt="" id="foto-perfil">
+                        <img src="assets/imagens/foto-perfil.jpeg" alt="Foto de perfil de Frederico Zito"
+                            id="foto-perfil">
                     </a>
-                    <h3>Frederico Zito</h3>
+                    <h3>Frederico José Zito</h3>
                     <div id="org-rede">
                         <a href="#" class="redes-socias">
-                            <img src="assets/icones/linkedin.png" alt="" class="img-rede">
+                            <img src="assets/icones/linkedin.png" alt="LinkdIn" class="img-rede">
                         </a>
                         <a href="#" class="redes-socias">
-                            <img src="assets/icones/instagram.png" alt="" class="img-rede">
+                            <img src="assets/icones/instagram.png" alt="Instagram" class="img-rede">
                         </a>
                         <a href="#" class="redes-socias">
-                            <img src="assets/icones/twitter.png" alt="" class="img-rede">
+                            <img src="assets/icones/twitter.png" alt="Twitter" class="img-rede">
                         </a>
                         <a href="#" class="redes-socias">
-                            <img src="assets/icones/github.png" alt="" class="img-rede">
+                            <img src="assets/icones/github.png" alt="Github" class="img-rede">
                         </a>
                     </div>
                 </div>
@@ -84,36 +87,6 @@
                         curricular, e sou grato por tudo. Tenho a meta de um dia me tornar um <em>Programador
                             Full-Stack´s</em>, sabendo mesmo assim que é um caminho longo a seguir
                     </p>
-                </article>
-
-                <article id="competencias">
-
-                    <h3>Minhas Competências</h3>
-
-                    <p> Com o objectivo e a meta estabelecida por mim, para me tornar um dia uma referência angolana na
-                        área
-                        da Tecnologia, tenho construindo competências, que eu sei que me colocaram um dia no topo.</p>
-                    <p>
-                        Essas são as minhas competencias adquiridas até o momento:
-                    </p>
-                    <ul id="menu-comp">
-                        <ol class="area-comp">
-                            <h4>Hardskills</h4>
-                            <li>HTML5 & CSS3</li>
-                            <li>Lógica de Programação</li>
-                            <li>Git & GitHub</li>
-                            <li>JavaScript Básico</li>
-                            <li>Bootstrap Framework</li>
-                        </ol>
-                        <ol class="area-comp">
-                            <h4>Softskill</h4>
-                            <li>Boa Capacidade de Comunicação</li>
-                            <li>Capacidade de Liderança</li>
-                            <li>Competente na resolução de Problemas</li>
-                            <li>Espirito de Trabalho em Equipe</li>
-                            <li>Comprometido ao crescimento da Empresa</li>
-                        </ol>
-                    </ul>
                 </article>
             </div>
         </section>
@@ -158,125 +131,136 @@
                 </div>
             </div>
         </section>
-    </main>
 
-    <!--AQUI SÃO APRESENTADAS MAIS INFORMAÇÕES SOBRE A MINHA PESSOA-->
+        <!--AQUI SÃO APRESENTADAS MAIS INFORMAÇÕES SOBRE A MINHA PESSOA-->
 
-    <div id="informacoes">
-        <div id="informacoes-corpo">
-            <h2>Meus Serviços</h2>
-            <div id="row">
-                <div class="card-informacoes">
-                    <h3>Formação de Informática</h3>
-                    <p>Trabalho também como formador na área de informática, ensinando desde a base fundamental até onde
-                        o
-                        formando se tornar independente e decidir crescer sozinho.</p>
-                </div>
-                <div class="card-informacoes">
-                    <h3>Programação</h3>
-                    <p>Adoro a programação e vecho ela como um Robby para mim, e é um imenso privilégio enviar aquilo
-                        que eu
-                        amo.</p>
-                    <p>Aprenderás a desenvolver lógica e a criar soluções para os seus próprios problemas, como também a
-                        ajudar e desenvoler para empresas.</p>
-                </div>
-                <div class="card-informacoes">
-                    <h3>Desenvolvimento de Site</h3>
-                    <p>Ofereço os meus serviços, como desenvolvedor de sites e sistemas Online, a preços justos e de
-                        acordo
-                        as exigências do cliente.</p>
+        <section id="informacoes">
+            <div id="informacoes-corpo">
+                <h2>Meus Serviços</h2>
+                <div id="row">
+                    <div class="card-informacoes">
+                        <h3>Formação de Informática</h3>
+                        <p>Trabalho também como formador na área de informática, ensinando desde a base fundamental até
+                            onde
+                            o
+                            formando se tornar independente e decidir crescer sozinho.</p>
+                    </div>
+                    <div class="card-informacoes">
+                        <h3>Programação</h3>
+                        <p>Adoro a programação e vecho ela como um Robby para mim, e é um imenso privilégio enviar
+                            aquilo
+                            que eu
+                            amo.</p>
+                        <p>Aprenderás a desenvolver lógica e a criar soluções para os seus próprios problemas, como
+                            também a
+                            ajudar e desenvoler para empresas.</p>
+                    </div>
+                    <div class="card-informacoes">
+                        <h3>Desenvolvimento de Site</h3>
+                        <p>Ofereço os meus serviços, como desenvolvedor de sites e sistemas Online, a preços justos e de
+                            acordo
+                            as exigências do cliente.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <h2>Minhas recomendações</h2>
+            <h2>Minhas recomendações</h2>
 
-        <aside id="lateral-esquerda">
-            <iframe width="900" height="450" src="https://www.youtube.com/embed/A1BaZr82XJI"
-                title="Se nao aprender PROGRAMAÇÃO com esse video. - ̗̀  DESISTE   ̖́-" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <p>Depois deste video, você não será a mesma pessoa que tem sempre desistindo de tudo antes mesmo de chegar
-                ao fim e mostrar o quanto aprendeste, e quanto ainda podes aprender, neste ramo da informática.</p>
-        </aside>
+            <div id="lateral-esquerda">
+                <iframe width="900" height="450" src="https://www.youtube.com/embed/A1BaZr82XJI"
+                    title="Se nao aprender PROGRAMAÇÃO com esse video. - ̗̀  DESISTE   ̖́-" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <p>Depois deste video, você não será a mesma pessoa que tem sempre desistindo de tudo antes mesmo de
+                    chegar
+                    ao fim e mostrar o quanto aprendeste, e quanto ainda podes aprender, neste ramo da informática.</p>
+            </div>
 
-        <!--FAQ - PERGUNTAS E RESPOSTAS-->
+            <!--FAQ - PERGUNTAS E RESPOSTAS-->
 
-        <div id="faq">
-            <details>
-                <summary> O que eu acho da Programação?</summary>
-                <p>O meu ponto de vista no que concerne, a programação é que ela não é dificil, mais sim bbastante
-                    complexa
-                    que mesmo com motivação, não é possível aprender. Ela obriga sermos obsecado por aprender não
-                    motivado.
-                </p>
-            </details>
-            <details>
-                <summary>Como ser um programador?</summary>
-                <p>Para sermos um programador devemos, primeiramente saber em que área queremos nos aprofundar, depois
-                    disso
-                    precisamos estudar com afinco, e mais que falar muito devemos praticar 80%, teoria 20%.</p>
-            </details>
-            <details>
-                <summary>Qual é o meu conselho?</summary>
-                <p>Nunca espere o amanhã para aprender e desenvolver habilidades. Seja a sua melhor versão.</p>
-            </details>
-        </div>
-    </div>
+            <div id="faq">
+                <h2>Perguntas Frequentes</h2>
+                <details>
+                    <summary> O que eu acho da Programação?</summary>
+                    <p>O meu ponto de vista no que concerne, a programação é que ela não é dificil, mais sim bbastante
+                        complexa
+                        que mesmo com motivação, não é possível aprender. Ela obriga sermos obsecado por aprender não
+                        motivado.
+                    </p>
+                </details>
+                <details>
+                    <summary>Como ser um programador?</summary>
+                    <p>Para sermos um programador devemos, primeiramente saber em que área queremos nos aprofundar,
+                        depois
+                        disso
+                        precisamos estudar com afinco, e mais que falar muito devemos praticar 80%, teoria 20%.</p>
+                </details>
+                <details>
+                    <summary>Qual é o meu conselho?</summary>
+                    <p>Nunca espere o amanhã para aprender e desenvolver habilidades. Seja a sua melhor versão.</p>
+                </details>
+            </div>
+        </section>
 
-    <!--FORMULÁRIO DE CONTATO-->
+        <!--FORMULÁRIO DE CONTATO-->
 
-    <div id="contacto">
-        <form action="" method="post">
-            <fieldset>
-                <legend>Entre em contacto</legend>
-                <div id="form-row">
-                    <div class="card">
-                        <p>
-                            <label for="nome">Nome:</label>
-                            <input type="text" name="snome" id="nome" maxlength="30" size="35" placeholder="Nome"
-                                required>
-                        </p>
-                        <p>
-                            <label for="email">Email:</label>
-                            <input type="email" name="semail" id="email" maxlength="40" size="35" required
-                                placeholder="examplo@gmail.com">
-                        </p>
+        <section id="contacto">
+            <form action="" method="post">
+                <fieldset>
+                    <legend>Entre em contacto</legend>
+                    <div id="form-row">
+                        <div class="card">
+                            <p>
+                                <label for="nome">Nome:</label>
+                                <input type="text" name="snome" id="nome" maxlength="30" size="35" placeholder="Nome"
+                                    required>
+                            </p>
+                            <p>
+                                <label for="email">Email:</label>
+                                <input type="email" name="semail" id="email" maxlength="40" size="35" required
+                                    placeholder="examplo@gmail.com">
+                            </p>
+                        </div>
+                        <div class="card">
+                            <p>
+                                <label for="numero">Tel: </label>
+                                <input type="tel" name="Nnumero" id="numero" maxlength="9" size="35"
+                                    placeholder="+244 --- --- ---" required>
+                            </p>
+                            <p>
+                                <label for="servicos">Meus Serviços</label>
+                                <select name="Sservicos" id="servicos">
+                                    <option disabled selected>Escolhe o serviço pretendido</option>
+                                    <option value="Instalação de Sistema Operacional">Instalação e Configuração de <abbr
+                                            title="Sistema Operacional">SO</abbr> </option>
+                                    <option value="">Criação e Configuração de <abbr title="Máquinas Virtuais">
+                                            MV</abbr></option>
+                                    <option value="">Criação de Panfletos, Cartazes e Banners</option>
+                                    <option value="">Desenvolvimento de Loja Online</option>
+                                    <option value="">Desenvolvimento de Sistema de Gestão</option>
+                                    <option value="">Formação de Lógica de Programação</option>
+                                    <option value="">Reparação de Computadores Desktops</option>
+                                    <option value="">Ensinamentos de Cloud Computing</option>
+                                </select>
+                            </p>
+                        </div>
                     </div>
-                    <div class="card">
-                        <p>
-                            <label for="numero">Tel: </label>
-                            <input type="number" name="Nnumero" id="numero" maxlength="9" size="35"
-                                placeholder="+244 --- --- ---" required>
-                        </p>
-                        <p>
-                            <label for="servicos">Meus Serviços</label>
-                            <select name="Sservicos" id="servicos">
-                                <option disabled selected>Escolhe o serviço pretendido</option>
-                                <option value="">Instalação de Sistema Operacional</option>
-                                <option value="">Criação e Configuração de Máquinas Virtuais</option>
-                                <option value="">Criação de Panfletos e Cartazes</option>
-                                <option value="">Desenvolvimento de Loja Online</option>
-                                <option value="">Desenvolvimento de Sistema de Gestão Escolar</option>
-                                <option value="">Formação de Lógica de Programação</option>
-                                <option value="">Reparação de Computadores Desktops</option>
-                                <option value="">Ensinamentos de Cloud Computing</option>
-                            </select>
-                        </p>
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea name="mensagem" id="mensagem" cols="50" rows="20"></textarea>
+                    <div>
+                        <button type="button" class="btn">Submeter</button>
                     </div>
-                </div>
-                <textarea name="mensagem" id="mensagem" cols="50" rows="20"></textarea>
-                <div>
-                    <button type="button" class="btn">Submeter</button>
-                </div>
-            </fieldset>
-        </form>
-    </div>
+                </fieldset>
+            </form>
+        </section>
+
+    </main>
 
     <!--SESSÃO DE RODÁPE-->
 
     <footer id="rodape">
         <p>&copy; Desenvolvido Por Frederico Zito 2026 - Direitos Reservados</p>
     </footer>
+    <script src="assets/javascript/script.js"></script>
 </body>
 
 </html>
