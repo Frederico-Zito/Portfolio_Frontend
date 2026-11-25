@@ -19,6 +19,11 @@
         <a href="index.html" target="_self">
             <img src="assets/imagens/foto-perfil.jpeg" alt="Foto de perfil de Frederico Zito" id="foto-header">
         </a>
+        <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-nav">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
         <nav id="menu-nav">
             <ul id="menu-link">
                 <li><a href="#inicio" class="link-nav">Inicio</a></li>
@@ -54,7 +59,7 @@
                     </a>
                     <h3>Frederico José Zito</h3>
                     <div id="org-rede">
-                        <a href="#" class="redes-socias">
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer " class="redes-socias">
                             <img src="assets/icones/linkedin.png" alt="LinkdIn" class="img-rede">
                         </a>
                         <a href="#" class="redes-socias">
@@ -160,11 +165,12 @@
             </div>
             <h2>Minhas recomendações</h2>
 
-            <div id="lateral-esquerda">
-                <iframe width="900" height="450" src="https://www.youtube.com/embed/A1BaZr82XJI"
+            <div id="area-recomendacao">
+                <iframe src="https://www.youtube.com/embed/A1BaZr82XJI"
                     title="Se nao aprender PROGRAMAÇÃO com esse video. - ̗̀  DESISTE   ̖́-" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                
                 <p>Depois deste video, você não será a mesma pessoa que tem sempre desistindo de tudo antes mesmo de
                     chegar
                     ao fim e mostrar o quanto aprendeste, e quanto ainda podes aprender, neste ramo da informática.</p>
@@ -176,7 +182,7 @@
                 <h2>Perguntas Frequentes</h2>
                 <details>
                     <summary> O que eu acho da Programação?</summary>
-                    <p>O meu ponto de vista no que concerne, a programação é que ela não é dificil, mais sim bbastante
+                    <p class="p-summary">O meu ponto de vista no que concerne, a programação é que ela não é dificil, mais sim bbastante
                         complexa
                         que mesmo com motivação, não é possível aprender. Ela obriga sermos obsecado por aprender não
                         motivado.
@@ -184,14 +190,14 @@
                 </details>
                 <details>
                     <summary>Como ser um programador?</summary>
-                    <p>Para sermos um programador devemos, primeiramente saber em que área queremos nos aprofundar,
+                    <p class="p-summary">Para sermos um programador devemos, primeiramente saber em que área queremos nos aprofundar,
                         depois
                         disso
                         precisamos estudar com afinco, e mais que falar muito devemos praticar 80%, teoria 20%.</p>
                 </details>
                 <details>
                     <summary>Qual é o meu conselho?</summary>
-                    <p>Nunca espere o amanhã para aprender e desenvolver habilidades. Seja a sua melhor versão.</p>
+                    <p class="p-summary">Nunca espere o amanhã para aprender e desenvolver habilidades. Seja a sua melhor versão.</p>
                 </details>
             </div>
         </section>
@@ -229,12 +235,18 @@
                                             title="Sistema Operacional">SO</abbr> </option>
                                     <option value="">Criação e Configuração de <abbr title="Máquinas Virtuais">
                                             MV</abbr></option>
-                                    <option value="">Criação de Panfletos, Cartazes e Banners</option>
-                                    <option value="">Desenvolvimento de Loja Online</option>
-                                    <option value="">Desenvolvimento de Sistema de Gestão</option>
-                                    <option value="">Formação de Lógica de Programação</option>
-                                    <option value="">Reparação de Computadores Desktops</option>
-                                    <option value="">Ensinamentos de Cloud Computing</option>
+                                    <option value="Criação de Panfletos, Cartazes e Banners">Criação de Panfletos,
+                                        Cartazes e Banners</option>
+                                    <option value="Desenvolvimento de Loja Online">Desenvolvimento de Loja Online
+                                    </option>
+                                    <option value="Desenvolvimento de Sistema de Gestão">Desenvolvimento de Sistema de
+                                        Gestão</option>
+                                    <option value="Formação de Lógica de Programação">Formação de Lógica de Programação
+                                    </option>
+                                    <option value="Reparação de Computadores Desktops">Reparação de Computadores
+                                        Desktops</option>
+                                    <option value="Ensinamentos de Cloud Computing">Ensinamentos de Cloud Computing
+                                    </option>
                                 </select>
                             </p>
                         </div>
@@ -242,7 +254,7 @@
                     <label for="mensagem">Mensagem:</label>
                     <textarea name="mensagem" id="mensagem" cols="50" rows="20"></textarea>
                     <div>
-                        <button type="button" class="btn">Submeter</button>
+                        <button type="submit" class="btn">Submeter</button>
                     </div>
                 </fieldset>
             </form>

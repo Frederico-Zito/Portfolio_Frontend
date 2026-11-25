@@ -60,7 +60,7 @@ ul#menu-link li a.link-nav:hover {
 /*Configuração do hero*/
 
 main header#hero {
-    height: 900px;
+    min-height: clamp(500px, 87vh, 900px);
     border: 3px solid orange;
     background: url(../imagens/mundo_programacao.jpeg) no-repeat;
     background-position: center;
@@ -78,7 +78,6 @@ main header#hero h1 {
 
 main header#hero h1:hover {
     color: black;
-    cursor: pointer;
 }
 
 /*Configuração da sessão Sobre Nós*/
@@ -185,7 +184,6 @@ section#projectos div#projecto-corpo div.colunas {
 
 section#projectos div#projecto-corpo div.colunas:hover {
     transform: scale(1.05);
-    cursor: pointer;
 }
 
 section#projectos div#projecto-corpo div.colunas h3 {
@@ -222,7 +220,7 @@ div#informacoes-corpo div#row {
     display: flex;
 }
 
-div#informacoes-corpo div#row div.card-informacoes {
+div#informacoes-corpo .card-informacoes {
     margin: 10px;
     background-color: var(--cor-de-fundo);
     padding: 20px;
@@ -233,17 +231,16 @@ div#informacoes-corpo div#row div.card-informacoes {
     transition: all .5s;
 }
 
-div#informacoes-corpo div#row div.card-informacoes:hover {
+div#informacoes-corpo .card-informacoes:hover {
     transform: scale(1.05);
-    cursor: pointer;
 }
 
-div#informacoes-corpo div#row div.card-informacoes h3 {
+div#informacoes-corpo .card-informacoes h3 {
     text-align: center;
     margin-bottom: 15px;
 }
 
-div#informacoes-corpo div#row div.card-informacoes p {
+div#informacoes-corpo .card-informacoes p {
     text-align: justify;
     line-height: 1.5;
     text-indent: 20px;
@@ -264,13 +261,33 @@ div#faq h2 {
 }
 
 div#faq details,
-summary {
+div#faq summary {
     padding: 10px;
 }
 
 div#faq summary {
     color: orange;
     font-weight: bold;
+}
+
+div#faq summary p.p-summary {
+    display: block;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+/*Configuração da área recomendação*/
+div#area-recomendacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+iframe {
+    max-width: 700px;
+    width: 100%;
+    min-height: 450px;
 }
 
 /*Configuração do formulário*/
@@ -291,7 +308,6 @@ form {
 }
 
 #form-row .card {
-    margin-right: 10px;
     flex: 1;
 }
 
@@ -305,6 +321,7 @@ legend {
 
 label {
     color: white;
+    display: block;
     margin-bottom: 15px;
 }
 
@@ -338,15 +355,73 @@ footer#rodape {
     align-items: center;
     border-top: 3px solid orange;
 }
-
+/*Menu Hamburger*/
+.menu-toggle{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+    width: 44px;
+    height: 44px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+.menu-toggle span{
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: white;
+    border-radius: 3px;
+}
 /*Responsividade*/
 
-@media (max-width: 700px) {
+@media (max-width: 730px) {
+    .menu-toggle{
+        display: flex;
+    }
+    #menu-nav{
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--cor-de-fundo);
+    }
+    #menu-nav.is-open{
+        display: block;
+    }
+    #menu-link{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #menu-link li{
+        display: block;
+        margin: 0;
+    }
+    #menu-link li a.link-nav{
+        display: block;
+        padding: 15px 20px;
+    }
     div#informacoes-corpo div#row {
         flex-wrap: wrap;
     }
 
     section#projectos div#projecto-corpo {
         flex-wrap: wrap;
+    }
+
+    iframe {
+        width: 100%;
+        min-height: 250px;
+    }
+
+    main header#hero {
+        background: url(../imagens/mundo_programacao.jpeg) no-repeat;
+        background-size: 100%;
+        background-color: black;
+        height: auto;
     }
 }
