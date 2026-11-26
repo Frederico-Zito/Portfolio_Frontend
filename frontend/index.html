@@ -1,273 +1,306 @@
 <!DOCTYPE html>
-<html lang="pt-Br">
+<!-- pt-PT conforme pedido (se o público for sobretudo angolano, pode usar pt-AO) -->
+<html lang="pt-PT">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Frederico Zito">
-    <meta name="description" content="Este é o meu portfolio, onde espelho as minhas competências.">
-    <meta name="keywords" content="Desenvolvedor Frontend, Portfolio Web, Construção de Carreira.">
 
-    <!-- Sessão dos Links -->
+    <!-- SEO: título (~60 caracteres) e descrição (~155) únicos, com nome e função -->
+    <title>Frederico Zito | Programador de Aplicações e Desenvolvedor Web</title>
+    <meta name="description"
+        content="Frederico Zito, programador de aplicações em Angola. Desenvolvimento de sítios web e sistemas à medida, formação em informática. Peça o seu orçamento.">
+    <meta name="author" content="Frederico Zito">
+    <meta name="robots" content="index, follow">
+    <!-- TODO: substituir pelo domínio real -->
+    <link rel="canonical" href="https://www.exemplo.com/">
+
+    <!-- Segurança: política de conteúdos (CSP). Só permite recursos do próprio sítio,
+         o YouTube (modo sem cookies) e a nossa API de contacto (connect-src). -->
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; img-src 'self' data:; script-src 'self'; style-src 'self'; frame-src https://www.youtube-nocookie.com; connect-src 'self' https://SEU-BACKEND.onrender.com; form-action 'self'; base-uri 'self'">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+
+    <!-- Pré-visualização ao partilhar (LinkedIn, WhatsApp, Facebook) -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_PT">
+    <meta property="og:title" content="Frederico Zito | Programador de Aplicações e Desenvolvedor Web">
+    <meta property="og:description" content="Sítios web e sistemas à medida, com foco em qualidade e segurança.">
+    <meta property="og:image" content="https://www.exemplo.com/assets/imagens/og-imagem.jpg">
+    <meta property="og:url" content="https://www.exemplo.com/">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="icon" href="assets/imagens/favicon.png" type="image/png">
     <link rel="stylesheet" href="assets/estilos/estilo.css">
 
-    <title>Portfolio Web - Profissional</title>
+    <!-- Dados estruturados: ajudam o Google a identificar a pessoa -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Frederico José Zito",
+      "jobTitle": "Programador de Aplicações",
+      "worksFor": { "@type": "Organization", "name": "Beyond Limits" },
+      "email": "mailto:fredericojosezito@gmail.com",
+      "telephone": "+244925875812",
+      "url": "https://www.exemplo.com/"
+    }
+    </script>
+    <script src="assets/javascript/script.js" defer></script>
 </head>
 
 <body>
-    <header id="cabecalho">
-        <a href="index.html" target="_self">
-            <img src="assets/imagens/foto-perfil.jpeg" alt="Foto de perfil de Frederico Zito" id="foto-header">
+    <a class="salto-conteudo" href="#conteudo">Saltar para o conteúdo</a>
+
+    <!-- CABEÇALHO E NAVEGAÇÃO -->
+    <header class="cabecalho">
+        <a href="#inicio" class="cabecalho__logo" aria-label="Ir para o início">
+            <img src="assets/imagens/foto-perfil.jpeg" alt="Fotografia de Frederico Zito" width="56" height="56">
         </a>
-        <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-nav">
-            <span></span>
-            <span></span>
-            <span></span>
+        <button class="menu__botao" type="button" aria-label="Menu" aria-expanded="false" aria-controls="menu">
+            <span></span><span></span><span></span>
         </button>
-        <nav id="menu-nav">
-            <ul id="menu-link">
-                <li><a href="#inicio" class="link-nav">Inicio</a></li>
-                <li><a href="#sobre" class="link-nav">Sobre Mim</a></li>
-                <li><a href="#projectos" class="link-nav">Projectos</a></li>
-                <li><a href="#informacoes" class="link-nav">+ Informações</a></li>
-                <li><a href="#contacto" class="link-nav">Contacte-me</a></li>
+        <nav id="menu" class="menu" aria-label="Principal">
+            <ul class="menu__lista">
+                <li><a class="menu__link" href="#sobre">Sobre mim</a></li>
+                <li><a class="menu__link" href="#competencias">Competências</a></li>
+                <li><a class="menu__link" href="#projetos">Projetos</a></li>
+                <li><a class="menu__link" href="#servicos">Serviços</a></li>
+                <li><a class="menu__link" href="#contacto">Contacto</a></li>
             </ul>
         </nav>
-
     </header>
 
-    <hr>
-    <main id="inicio">
-        <header id="hero">
-            <div style="visibility: hidden;">
-                <h1>Hoje você conhecerá alguém tão especial.</h1>
-                <p>
-                    Esta especialidade, será útil para você um dia, seja Particular ou Empresa.
-                </p>
-            </div>
-        </header>
-
-        <!--SESSÃO SOBRE MIM-->
-
-        <section id="sobre">
-            <div id="campo">
-                <h2>Sobre Mim</h2>
-                <div>
-                    <a href="index.html">
-                        <img src="assets/imagens/foto-perfil.jpeg" alt="Foto de perfil de Frederico Zito"
-                            id="foto-perfil">
-                    </a>
-                    <h3>Frederico José Zito</h3>
-                    <div id="org-rede">
-                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer " class="redes-socias">
-                            <img src="assets/icones/linkedin.png" alt="LinkdIn" class="img-rede">
-                        </a>
-                        <a href="#" class="redes-socias">
-                            <img src="assets/icones/instagram.png" alt="Instagram" class="img-rede">
-                        </a>
-                        <a href="#" class="redes-socias">
-                            <img src="assets/icones/twitter.png" alt="Twitter" class="img-rede">
-                        </a>
-                        <a href="#" class="redes-socias">
-                            <img src="assets/icones/github.png" alt="Github" class="img-rede">
-                        </a>
-                    </div>
+    <main id="conteudo">
+        <!-- SECÇÃO INÍCIO: o único h1 da página, visível e com palavras-chave -->
+        <section id="inicio" class="hero">
+            <div class="hero__texto">
+                <h1 class="hero__titulo">Frederico Zito, programador de aplicações e desenvolvedor web</h1>
+                <p class="hero__subtitulo">Construo sítios web e sistemas à medida para empresas e particulares, e sigo
+                    o caminho para full-stack e engenharia de prompts.</p>
+                <div class="hero__acoes">
+                    <a class="botao botao--primario" href="#contacto">Fale comigo</a>
+                    <a class="botao botao--secundario" href="#projetos">Ver projetos</a>
                 </div>
-                <article id="apresentacao">
-                    <p> Eu sou um estudante de Informática, formado no Instituto Politécnico Privado Industrial Evolução
-                        -
-                        IPPIE, na especialidade de Técnico de informática. Foram 4 anos de formação, composta por baixos
-                        e
-                        altos, tive o privilégio de aprender tudo o quanto teve no meu alcance, e em tudo que pude beber
-                        de
-                        outras pessoas.
-                    </p>
-                    <p>
-                        Fui um estágiario da empresa <strong>Beyond Limits</strong>, durante 4 meses, entrei sem nemhuma
-                        experiência de trabalho, mais por intermédio da minha dedicação pude estudar e aprender coisas
-                        novas, sobre o ambiente Profissional.
-                    </p>
-                    <p>
-                        Atualmente trabalho como Programador de Aplicação na mesma empresa, que me ofereceu estágio
-                        curricular, e sou grato por tudo. Tenho a meta de um dia me tornar um <em>Programador
-                            Full-Stack´s</em>, sabendo mesmo assim que é um caminho longo a seguir
-                    </p>
+            </div>
+        </section>
+
+        <!-- SECÇÃO SOBRE MIM -->
+        <section id="sobre" class="secao secao--clara">
+            <div class="secao__miolo sobre">
+                <div class="sobre__perfil">
+                    <img class="sobre__foto" src="assets/imagens/foto-perfil.jpeg"
+                        alt="Fotografia de Frederico José Zito" width="400" height="400" loading="lazy">
+                    <h2 class="secao__titulo">Sobre mim</h2>
+                    <!-- TODO: colocar os endereços reais dos perfis -->
+                    <ul class="redes">
+                        <li><a href="https://www.linkedin.com/in/O-SEU-PERFIL" target="_blank"
+                                rel="noopener noreferrer"><img src="assets/icones/linkedin.png" alt="LinkedIn"
+                                    width="40" height="40" loading="lazy"></a></li>
+                        <li><a href="https://github.com/O-SEU-UTILIZADOR" target="_blank" rel="noopener noreferrer"><img
+                                    src="assets/icones/github.png" alt="GitHub" width="40" height="40"
+                                    loading="lazy"></a></li>
+                    </ul>
+                </div>
+                <article class="sobre__texto">
+                    <p>Sou técnico de informática, formado no Instituto Politécnico Privado Industrial Evolução (IPPIE),
+                        após quatro anos de formação com altos e baixos, em que aprendi tudo o que estava ao meu
+                        alcance.</p>
+                    <p>Estagiei quatro meses na <strong>Beyond Limits</strong>. Entrei sem experiência profissional e,
+                        com dedicação, aprendi como funciona o ambiente de trabalho. Hoje sou lá programador de
+                        aplicações.</p>
+                    <p>A minha meta é tornar-me programador <em>full-stack</em> e engenheiro de prompts, e sei que é um
+                        caminho longo. Por isso aprendo todos os dias e pratico mais do que leio.</p>
                 </article>
             </div>
         </section>
 
-        <!--SESSÃO PARA A DESCRIÇÃOP DOS MEUS PROJECTOS-->
-
-        <section id="projectos">
-            <div id="projecto-header">
-                <h2>Meus Projectos</h2>
-            </div>
-
-            <div id="projecto-hero">
-                <p>Em todo o meu percurso de evolução até na atualidade, tive o privilégio de desenvolver e ajudar
-                    no
-                    desenvolvimento dos seguintes projectos:</p>
-                <div id="projecto-corpo">
-                    <div class="colunas">
-                        <h3>Beyond Limits</h3>
-                        <p>Desenvolvi e continuo Desenvolvendo, para a Beyond Limits, empresa na qual faço parte.
-                            Trabalhei na criação do <strong>RCF e REP</strong>, funcionalidades especiais do
-                            Projecto
-                            Beyond_Limits.</p>
-                    </div>
-                    <div class="colunas">
-                        <h3>Sistema de Deteção de Fraudes</h3>
-                        <p>Este foi o meu projecto de Fim de curso, o famoso TCC. Um sistema que consiste em
-                            analisar,
-                            verificar e aprovar comprovativos de pagamentos de próprinas.</p>
-                    </div>
-                    <div class="colunas">
-                        <h3>Cyber Serviços</h3>
-                        <p>Estou trabalhando minuciosamente, para a oferta de soluções aos cyber´s que estão em face
-                            de
-                            crescimento, e não só, como também aos que já se encontram firmes e estabilizado. </p>
-                    </div>
-
+        <!-- SECÇÃO COMPETÊNCIAS -->
+        <section id="competencias" class="secao">
+            <div class="secao__miolo">
+                <h2 class="secao__titulo secao__titulo--claro">Competências</h2>
+                <div class="grelha">
+                    <article class="cartao cartao--claro">
+                        <h3 class="cartao__titulo">Front-end</h3>
+                        <p>HTML, CSS, JavaScript e Bootstrap.</p>
+                    </article>
+                    <article class="cartao cartao--claro">
+                        <h3 class="cartao__titulo">Back-end</h3>
+                        <p>Python e FastAPI, autenticação com JWT e APIs REST.</p>
+                    </article>
+                    <article class="cartao cartao--claro">
+                        <h3 class="cartao__titulo">Ferramentas e infraestrutura</h3>
+                        <p>Git, instalação de sistemas operativos, máquinas virtuais e computação em nuvem.</p>
+                    </article>
+                    <article class="cartao cartao--claro">
+                        <h3 class="cartao__titulo">A aprender</h3>
+                        <p>Arquitetura full-stack, segurança web e engenharia de prompts.</p>
+                    </article>
                 </div>
             </div>
         </section>
 
-        <!--AQUI SÃO APRESENTADAS MAIS INFORMAÇÕES SOBRE A MINHA PESSOA-->
-
-        <section id="informacoes">
-            <div id="informacoes-corpo">
-                <h2>Meus Serviços</h2>
-                <div id="row">
-                    <div class="card-informacoes">
-                        <h3>Formação de Informática</h3>
-                        <p>Trabalho também como formador na área de informática, ensinando desde a base fundamental até
-                            onde
-                            o
-                            formando se tornar independente e decidir crescer sozinho.</p>
-                    </div>
-                    <div class="card-informacoes">
-                        <h3>Programação</h3>
-                        <p>Adoro a programação e vecho ela como um Robby para mim, e é um imenso privilégio enviar
-                            aquilo
-                            que eu
-                            amo.</p>
-                        <p>Aprenderás a desenvolver lógica e a criar soluções para os seus próprios problemas, como
-                            também a
-                            ajudar e desenvoler para empresas.</p>
-                    </div>
-                    <div class="card-informacoes">
-                        <h3>Desenvolvimento de Site</h3>
-                        <p>Ofereço os meus serviços, como desenvolvedor de sites e sistemas Online, a preços justos e de
-                            acordo
-                            as exigências do cliente.</p>
-                    </div>
+        <!-- SECÇÃO PROJETOS -->
+        <section id="projetos" class="secao secao--clara">
+            <div class="secao__miolo">
+                <h2 class="secao__titulo">Projetos</h2>
+                <p class="secao__intro">Alguns dos sistemas que desenvolvi ou em que colaborei.</p>
+                <div class="grelha">
+                    <article class="cartao">
+                        <h3 class="cartao__titulo">Beyond Limits</h3>
+                        <p>Participo no desenvolvimento de funcionalidades de um produto empresarial, entre elas o RCF e
+                            o REP.</p>
+                        <p class="cartao__tecnologias">HTML, CSS, JavaScript, Python</p>
+                    </article>
+                    <article class="cartao">
+                        <h3 class="cartao__titulo">Sistema de deteção de fraudes</h3>
+                        <p>Trabalho de fim de curso que analisa, verifica e aprova comprovativos de pagamento de
+                            propinas.</p>
+                        <p class="cartao__tecnologias">TODO: indicar as tecnologias usadas</p>
+                    </article>
+                    <article class="cartao">
+                        <h3 class="cartao__titulo">Cyber Serviços</h3>
+                        <p>Soluções de gestão para cibercafés, tanto os que estão a crescer como os já estabelecidos.
+                        </p>
+                        <p class="cartao__tecnologias">Em desenvolvimento</p>
+                    </article>
                 </div>
             </div>
-            <h2>Minhas recomendações</h2>
+        </section>
 
-            <div id="area-recomendacao">
-                <iframe src="https://www.youtube.com/embed/A1BaZr82XJI"
-                    title="Se nao aprender PROGRAMAÇÃO com esse video. - ̗̀  DESISTE   ̖́-" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                
-                <p>Depois deste video, você não será a mesma pessoa que tem sempre desistindo de tudo antes mesmo de
-                    chegar
-                    ao fim e mostrar o quanto aprendeste, e quanto ainda podes aprender, neste ramo da informática.</p>
+        <!-- SECÇÃO SERVIÇOS -->
+        <section id="servicos" class="secao">
+            <div class="secao__miolo">
+                <h2 class="secao__titulo secao__titulo--claro">Serviços</h2>
+                <div class="grelha">
+                    <article class="cartao cartao--claro">
+                        <h3 class="cartao__titulo">Formação em informática</h3>
+                        <p>Ensino desde os fundamentos até o formando conseguir evoluir sozinho.</p>
+                    </article>
+                    <article class="cartao cartao--claro">
+                        <h3 class="cartao__titulo">Programação</h3>
+                        <p>Aprende a desenvolver lógica e a criar soluções para os seus problemas, ou desenvolvemos
+                            juntos para a sua empresa.</p>
+                    </article>
+                    <article class="cartao cartao--claro">
+                        <h3 class="cartao__titulo">Sítios web e sistemas</h3>
+                        <p>Desenvolvimento de sítios e sistemas online, a preços justos e conforme as necessidades do
+                            cliente.</p>
+                    </article>
+                </div>
+                <p class="secao__intro secao__intro--claro"><a class="ligacao-cv"
+                        href="assets/documentos/cv-frederico-zito.pdf" download>Descarregar currículo (PDF)</a></p>
             </div>
+        </section>
 
-            <!--FAQ - PERGUNTAS E RESPOSTAS-->
-
-            <div id="faq">
-                <h2>Perguntas Frequentes</h2>
-                <details>
-                    <summary> O que eu acho da Programação?</summary>
-                    <p class="p-summary">O meu ponto de vista no que concerne, a programação é que ela não é dificil, mais sim bbastante
-                        complexa
-                        que mesmo com motivação, não é possível aprender. Ela obriga sermos obsecado por aprender não
-                        motivado.
-                    </p>
+        <!-- SECÇÃO FAQ -->
+        <section id="faq" class="secao secao--clara">
+            <div class="secao__miolo secao__miolo--estreito">
+                <h2 class="secao__titulo">Perguntas frequentes</h2>
+                <details class="faq__item">
+                    <summary class="faq__pergunta">O que penso da programação?</summary>
+                    <p class="faq__resposta">É exigente, mais do que difícil. Pede curiosidade constante e prática
+                        diária, não apenas motivação passageira.</p>
                 </details>
-                <details>
-                    <summary>Como ser um programador?</summary>
-                    <p class="p-summary">Para sermos um programador devemos, primeiramente saber em que área queremos nos aprofundar,
-                        depois
-                        disso
-                        precisamos estudar com afinco, e mais que falar muito devemos praticar 80%, teoria 20%.</p>
+                <details class="faq__item">
+                    <summary class="faq__pergunta">Como se começa a programar?</summary>
+                    <p class="faq__resposta">Escolhe-se uma área, estuda-se com método e pratica-se muito: cerca de 80%
+                        de prática e 20% de teoria.</p>
                 </details>
-                <details>
-                    <summary>Qual é o meu conselho?</summary>
-                    <p class="p-summary">Nunca espere o amanhã para aprender e desenvolver habilidades. Seja a sua melhor versão.</p>
+                <details class="faq__item">
+                    <summary class="faq__pergunta">Qual é o meu conselho?</summary>
+                    <p class="faq__resposta">Não adie o que pode aprender hoje. Cada dia de prática conta.</p>
                 </details>
             </div>
         </section>
 
-        <!--FORMULÁRIO DE CONTATO-->
-
-        <section id="contacto">
-            <form action="" method="post">
-                <fieldset>
-                    <legend>Entre em contacto</legend>
-                    <div id="form-row">
-                        <div class="card">
-                            <p>
-                                <label for="nome">Nome:</label>
-                                <input type="text" name="snome" id="nome" maxlength="30" size="35" placeholder="Nome"
-                                    required>
-                            </p>
-                            <p>
-                                <label for="email">Email:</label>
-                                <input type="email" name="semail" id="email" maxlength="40" size="35" required
-                                    placeholder="examplo@gmail.com">
-                            </p>
-                        </div>
-                        <div class="card">
-                            <p>
-                                <label for="numero">Tel: </label>
-                                <input type="tel" name="Nnumero" id="numero" maxlength="9" size="35"
-                                    placeholder="+244 --- --- ---" required>
-                            </p>
-                            <p>
-                                <label for="servicos">Meus Serviços</label>
-                                <select name="Sservicos" id="servicos">
-                                    <option disabled selected>Escolhe o serviço pretendido</option>
-                                    <option value="Instalação de Sistema Operacional">Instalação e Configuração de <abbr
-                                            title="Sistema Operacional">SO</abbr> </option>
-                                    <option value="">Criação e Configuração de <abbr title="Máquinas Virtuais">
-                                            MV</abbr></option>
-                                    <option value="Criação de Panfletos, Cartazes e Banners">Criação de Panfletos,
-                                        Cartazes e Banners</option>
-                                    <option value="Desenvolvimento de Loja Online">Desenvolvimento de Loja Online
-                                    </option>
-                                    <option value="Desenvolvimento de Sistema de Gestão">Desenvolvimento de Sistema de
-                                        Gestão</option>
-                                    <option value="Formação de Lógica de Programação">Formação de Lógica de Programação
-                                    </option>
-                                    <option value="Reparação de Computadores Desktops">Reparação de Computadores
-                                        Desktops</option>
-                                    <option value="Ensinamentos de Cloud Computing">Ensinamentos de Cloud Computing
-                                    </option>
-                                </select>
-                            </p>
-                        </div>
-                    </div>
-                    <label for="mensagem">Mensagem:</label>
-                    <textarea name="mensagem" id="mensagem" cols="50" rows="20"></textarea>
-                    <div>
-                        <button type="submit" class="btn">Submeter</button>
-                    </div>
-                </fieldset>
-            </form>
+        <!-- SECÇÃO RECOMENDAÇÃO (vídeo carregado só quando visível, sem cookies) -->
+        <section id="recomendacao" class="secao">
+            <div class="secao__miolo secao__miolo--estreito">
+                <h2 class="secao__titulo secao__titulo--claro">Recomendação</h2>
+                <p class="secao__intro secao__intro--claro">Um vídeo que recomendo a quem está a começar em programação.
+                </p>
+                <iframe class="video" src="https://www.youtube-nocookie.com/embed/A1BaZr82XJI"
+                    title="Vídeo de introdução à programação" loading="lazy"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allow="encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
         </section>
 
+        <!-- SECÇÃO CONTACTO -->
+        <section id="contacto" class="secao secao--clara">
+            <div class="secao__miolo secao__miolo--estreito">
+                <h2 class="secao__titulo">Entre em contacto</h2>
+                <p class="secao__intro">
+                    <a href="mailto:fredericojosezito@gmail.com">fredericojosezito@gmail.com</a> ·
+                    <a href="tel:+244925875812">+244 925 875 812</a> ·
+                    <a href="https://wa.me/244925875812" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+                </p>
+
+                <!-- TODO: data-api-url = endereço da API alojada (ver backend/README.md).
+                     O envio é feito por JavaScript; sem ele, usar o email acima. -->
+                <form id="formulario" class="formulario" data-api-url="https://SEU-BACKEND.onrender.com/contacto"
+                    method="post" novalidate>
+                    <div class="formulario__linha">
+                        <div class="campo">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" maxlength="60" autocomplete="name" required
+                                placeholder="O seu nome">
+                            <span class="campo__erro" role="alert"></span>
+                        </div>
+                        <div class="campo">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" maxlength="80" autocomplete="email" required
+                                placeholder="exemplo@email.com">
+                            <span class="campo__erro" role="alert"></span>
+                        </div>
+                    </div>
+                    <div class="formulario__linha">
+                        <div class="campo">
+                            <label for="telemovel">Telemóvel</label>
+                            <input type="tel" id="telemovel" name="telemovel" maxlength="9" inputmode="numeric"
+                                autocomplete="tel-national" placeholder="9 dígitos, ex.: 925875812">
+                            <span class="campo__erro" role="alert"></span>
+                        </div>
+                        <div class="campo">
+                            <label for="servico">Serviço pretendido</label>
+                            <select id="servico" name="servico" required>
+                                <option value="" selected disabled>Escolha um serviço</option>
+                                <option>Instalação e configuração de sistemas operativos</option>
+                                <option>Criação e configuração de máquinas virtuais</option>
+                                <option>Panfletos, cartazes e faixas</option>
+                                <option>Desenvolvimento de loja online</option>
+                                <option>Desenvolvimento de sistema de gestão</option>
+                                <option>Formação em lógica de programação</option>
+                                <option>Reparação de computadores</option>
+                                <option>Formação em computação em nuvem</option>
+                            </select>
+                            <span class="campo__erro" role="alert"></span>
+                        </div>
+                    </div>
+                    <div class="campo">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" rows="6" minlength="10" maxlength="1000" required
+                            placeholder="Conte-me o que precisa"></textarea>
+                        <span class="campo__erro" role="alert"></span>
+                    </div>
+                    <!-- Armadilha anti-spam (honeypot): humanos não a veem, robôs preenchem -->
+                    <div class="armadilha" aria-hidden="true">
+                        <label for="website">Não preencher</label>
+                        <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+                    </div>
+                    <p class="formulario__privacidade">Os dados enviados servem apenas para responder ao seu pedido e
+                        não são partilhados com terceiros.</p>
+                    <button type="submit" class="botao botao--primario botao--cheio">Enviar mensagem</button>
+                    <p id="formulario-estado" class="formulario__estado" role="status"></p>
+                </form>
+            </div>
+        </section>
     </main>
 
-    <!--SESSÃO DE RODÁPE-->
-
-    <footer id="rodape">
-        <p>&copy; Desenvolvido Por Frederico Zito 2026 - Direitos Reservados</p>
+    <footer class="rodape">
+        <p>&copy; 2026 Frederico Zito. Todos os direitos reservados.</p>
     </footer>
-    <script src="assets/javascript/script.js"></script>
 </body>
 
 </html>
